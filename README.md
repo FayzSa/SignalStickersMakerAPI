@@ -68,7 +68,7 @@ $ flask run
 # PS : the files should be in local storage 
 # After the request a link will be generated 
 {
-    "link": "https://signal.art/addstickers/#pack_id=&pack_key="
+    "link": "https://signal.art/addstickers/#pack_id=#############&pack_key=###################"
 }
 ```
 ## Contributing
