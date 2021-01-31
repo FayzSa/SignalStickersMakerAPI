@@ -66,6 +66,10 @@ $ flask run
     "cover":"img.webp" # or png with limte size of 500*500
 }
 # PS : the files should be in local storage 
+# After the request a link will be generated 
+{
+    "link": "https://signal.art/addstickers/#pack_id=&pack_key="
+}
 ```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
