@@ -74,8 +74,7 @@ def create_Stickers():
     D = asyncio.run(main(request.json['packName'], request.json['authorName'],
                          request.json['listOfSticks'], request.json['cover']))
 
-    # D = asyncio.run(main(request.json['packName'],  request.json['authorName'],
-    #      request.json['listofStick'], request.json['cover']))
+  
     return D, 201
 
 
