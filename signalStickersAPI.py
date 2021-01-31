@@ -48,7 +48,7 @@ async def main(packTitle, packAuthor, listofStick, coverStick):
     pack.cover = cover
 
     # Instanciate the client with your Signal crendentials
-    async with StickersClient('165f3c42-886c-4017-a620-f3199c049d49.2', 'T7dYGpKVqVCc90DP5cMeyg') as client:
+    async with StickersClient('YOUR_SIGNAL_UID', 'YOUR_SIGNAL_PASSWORD') as client:
         # Upload the pack
         pack_id, pack_key = await client.upload_pack(pack)
 
