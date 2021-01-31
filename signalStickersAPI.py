@@ -65,19 +65,6 @@ async def main(packTitle, packAuthor, listofStick, coverStick):
     )
     return response
 
-
-@app.route('/')
-def indexo():
-    return "<h1> Hellsoo From Flask </h1>"
-
-
-@app.route('/signalSticker/')
-def index():
-    D = asyncio.run(main("New Pack", "Fayz", [
-        "D:\Tuto12\Programming\PyProjects\stick1.webp", 'D:\Tuto12\Programming\PyProjects\stick1.webp', 'D:\Tuto12\Programming\PyProjects\stick1.webp'], 'D:\Tuto12\Programming\PyProjects\stick1.webp'))
-    return D
-
-
 @app.route('/makeSticks/', methods=['POST'])
 def create_Stickers():
     D = asyncio.run(main(request.json['packName'], request.json['authorName'], [
